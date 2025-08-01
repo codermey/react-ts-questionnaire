@@ -21,4 +21,15 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
+  overrides: [
+    {
+      files: ['craco.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
+  rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
+  },
 }

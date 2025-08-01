@@ -10,5 +10,6 @@ module.exports = {
   tabWidth: 2,
   useTabs: false,
   trailingComma: 'es5',
-  parser: 'typescript',
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindConfig: './tailwind.config.js',
 }
